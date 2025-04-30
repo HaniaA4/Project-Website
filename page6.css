@@ -1,0 +1,99 @@
+* {
+    font-family: "kanit", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgb(156, 120, 150, 52%);
+    border-bottom: 4px solid;
+    padding: 40px;
+    margin: 0px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+   justify-content: space-around;
+   
+}
+
+nav ul li {
+    margin: 0;
+    flex-direction: column;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+}
+
+a:hover {
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/*.form-1 {
+    font-size: 30px;
+    color: black;
+    border-radius: 20px;
+    border-color: rgb(156, 120, 150, 52%);
+}*/
+
+.N {
+    width: 400px;
+    height: 60px;
+    padding: 10px 10px;
+    border: 4px solid rgb(156, 120, 150, 52%);
+    border-radius: 20px;
+    border-color: rgb(156, 120, 150, 52%);
+}
+.E {
+    width: 400px;
+    height: 60px;
+    padding: 10px 10px;
+    border: 4px solid rgb(156, 120, 150, 52%);
+    border-radius: 20px;
+    border-color: rgb(156, 120, 150, 52%);
+}
+
+.M {
+    width: 400px;
+    height: 100px;
+    resize: vertical;
+    padding: 10px 10px;
+    border: 4px solid rgb(156, 120, 150, 52%);
+    border-radius: 20px;
+    border-color: rgb(156, 120, 150, 52%);
+}
+
+::placeholder {
+    color: black;
+}
+
+button {
+    background-color: rgb(156, 120, 150, 52%);
+    padding: 10px 10px;
+    border: 2px solid rgb(156, 120, 150, 52%);
+    border-radius: 20px;
+    border-color: rgb(156, 120, 150, 52%);
+}
+
+button:hover {
+    border: 10px
+}
