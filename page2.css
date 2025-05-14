@@ -1,4 +1,4 @@
-body {
+* {
     font-family: "kanit", sans-serif;
     margin: 0;
     padding: 0;
@@ -54,4 +54,26 @@ p {
    margin-left: 250px;
    margin-right: 150px;
    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 20px 10px; /* Reduce nav padding */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Smaller nav text */
+    }
+
+    h3 {
+        margin-left: 50px; /* Further reduce heading margin */
+        margin-top: 80px;
+        font-size: 22px; /* Smaller heading */
+    }
+
+    p {
+        margin-left: 50px; /* Match heading margin */
+        margin-right: 50px;
+        font-size: 16px; /* Optimized for mobile */
+    }
 }
