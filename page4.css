@@ -23,7 +23,7 @@ nav ul {
 
 nav ul li {
     margin: 0;
-    flex-direction: column;
+    /*flex-direction: column;*/
 }
 
 nav ul li a {
@@ -56,4 +56,24 @@ h3{
 
 h4{
     font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 20px 10px;  /* Reduce padding */
+    }
+
+    nav ul li a {
+        font-size: 16px;  /* Slightly smaller text */
+    }
+
+    .box {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px;  /* Reduce padding */
+    }
+
+    h3 {
+        margin-left: 20px;  /* Adjust alignment */
+    }
 }
