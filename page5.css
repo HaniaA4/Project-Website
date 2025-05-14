@@ -76,3 +76,42 @@ h3 {
 .box {
     padding: 50px 50px 50px 50px;
 }
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column; /* Stack sections vertically */
+        gap: 40px; /* Reduce gap between boxes */
+        margin-top: 80px; /* Adjust top margin */
+    }
+
+    .box {
+        height: auto; /* Auto height for content */
+        padding: 30px; /* Reduce padding */
+        margin-bottom: 30px; /* Add space between boxes */
+    }
+
+    .box4, .box5, .box6 {
+        padding-left: 20px; /* Consistent padding */
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 20px 10px; /* Reduce nav padding */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Smaller nav text */
+    }
+
+    .box {
+        padding: 20px; /* Further reduce padding */
+        margin-left: 15px; /* Add side margins */
+        margin-right: 15px;
+    }
+
+    h3 {
+        font-size: 1.4rem; /* Slightly smaller heading */
+    }
+}
