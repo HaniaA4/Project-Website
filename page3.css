@@ -53,3 +53,27 @@ h3 {
 .container {
     margin-top: 80px;
 }
+@media (max-width: 768px) {
+    nav {
+        padding: 20px 10px; /* Reduce padding on smaller screens */
+    }
+    
+    nav ul {
+        flex-wrap: wrap; /* Allow items to wrap if needed */
+        gap: 10px; /* Add some space between items */
+    }
+    
+    nav ul li a {
+        font-size: 16px; /* Slightly reduce font size */
+        white-space: nowrap; /* Prevent text from breaking */
+    }
+    
+    .box {
+        margin-left: 20px; /* Reduce margins on content boxes */
+        margin-right: 20px;
+    }
+    
+    h3 {
+        margin-left: 20px;
+    }
+}
