@@ -22,7 +22,7 @@ nav ul {
 
 nav ul li {
     margin: 0;
-    flex-direction: column;
+    /*flex-direction: column;*/
 }
 
 nav ul li a {
@@ -38,18 +38,24 @@ a:hover {
 
 .container {
     background-color:  rgb(156, 120, 150, 52%) ;
-    margin-top: 0;
+   /* margin-top: 0;
     margin-bottom: 0;
     margin-left: 200px;
     margin-right: 200px;
     padding-top: 150px;
     padding-bottom: 100px;
     padding-left: 60px;
-    padding-right: 10px;
+    padding-right: 10px;*/
+    margin: 0 200px;
+    padding: 150px 60px 100px;
 }
 
 .main-section {
     display: flex;
+    /*add*/
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
 .intro {
@@ -58,7 +64,7 @@ a:hover {
     color: black;
     text-decoration-line: none;
     text-align: left;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 20px;
 }
 
@@ -75,54 +81,69 @@ a {
     text-decoration: none;
 }
 
-.image-box {
+/*.image-box {
 padding-left: 200px;
 padding-right: 100px;
 
+}*/
+
+.white-box {  
+   max-width:40%;
+   margin-right: 70px;
 }
 
-.white-box {
-    background-color: white;
-    width: 300px;
-    height: 300px;
-   
+.white-box img {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  display: block;
 }
 
-@media (max-width: 768px) {
-    .container {
-      padding-left: 20px;
-      padding-right: 20px;
-      flex-direction: column;
+/* Base layout for desktop */
+/*.main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}*/
+
+/* Responsive layout for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+
+    .container{
+      margin: 0;
+      padding: 100px 20px;
     }
-  
+
     .main-section {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-  
+
     .intro {
-      text-align: center;
-      margin-left: 0;
-      margin-top: 30px;
+        /*margin-bottom: 20px;*/
+        margin: 0 0 20px 0;
+        text-align: center;
     }
-  
-    .image-box {
-      padding-left: 0;
-      padding-right: 0;
-      margin-top: 20px;
+
+    nav {
+        padding: 20px 10px; /* Reduce nav padding */
     }
-  
-    .white-box {
-      width: 250px;
-      height: 250px;
+
+    nav ul li a {
+        font-size: 16px; /* Slightly smaller font */
     }
-  
-    nav ul {
-      /*flex-direction: column;*/
-      align-items: center;
+    
+    .white-box{
+      max-width: 100%;
+      margin: 0;
+      padding: 0 20px;
     }
-  
-    nav ul li {
-      margin-bottom: 10px;
+
+    .white-box img {
+        max-width: 100%;
+        /*max-width: 300px;
+        height: auto;*/
     }
 }
